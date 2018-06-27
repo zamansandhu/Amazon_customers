@@ -5,3 +5,4 @@ omit =
     Amazon_customers/*
     amazon_customers/apps.py/
     manage.py
+    */virtualenvs/*
