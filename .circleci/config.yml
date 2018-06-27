@@ -7,6 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
+          command: pip install --user setuptools virtualenv
+      - run:
           command: |
              coverage run manage.py test
               coverage report -m
