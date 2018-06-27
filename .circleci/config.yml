@@ -1,1 +1,15 @@
 
+version: 2
+jobs:
+  build:
+    working_directory: ~/Amazon_customers
+    docker:
+      - image: circleci/python:3.5
+    steps:
+      - checkout
+      - run:
+          command: pipenv install
+      - run:
+          command: |
+            pipenv run "coverage run manage.py test --settings=terratalk.settings.test --parallel=4"
+            pipenv run "coverage report -m"
