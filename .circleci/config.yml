@@ -7,8 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-          command: pipenv install
-      - run:
           command: |
              coverage run manage.py test
               coverage report -m
