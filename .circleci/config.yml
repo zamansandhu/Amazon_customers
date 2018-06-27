@@ -11,5 +11,5 @@ jobs:
           command: pipenv install
       - run:
           command: |
-            pipenv run "coverage run manage.py test --settings=terratalk.settings.test --parallel=4"
-            pipenv run "coverage report -m"
+             coverage run manage.py test
+              coverage report -m
