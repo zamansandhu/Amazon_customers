@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: pip install --user setuptools virtualenv
+          command: pipenv install
       - run:
           command: |
              coverage run manage.py test
