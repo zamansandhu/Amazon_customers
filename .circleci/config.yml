@@ -8,9 +8,9 @@ jobs:
       - checkout
       - run:
           command:
+            sudo chown -R $USER /usr/local/bin/easy_install
             source amazon/bin/activate
             sudo pip3 install setuptools virtualenv
-#          sudo chown -R $USER /usr/local/bin/easy_install
       - run:
           command: |
              coverage run manage.py test
