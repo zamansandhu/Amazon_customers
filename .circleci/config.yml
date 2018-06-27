@@ -7,7 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          command: pip install setuptools virtualenv
+          command: sudo chown -R $USER /usr/local/bin/easy_install
+                    pip install setuptools virtualenv
       - run:
           command: |
              coverage run manage.py test
