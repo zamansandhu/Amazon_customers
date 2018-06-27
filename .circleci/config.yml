@@ -8,9 +8,8 @@ jobs:
       - checkout
       - run:
           command:
-            python3 -m venv env
-            source ./amazon/bin/activate
-            sudo pip3 install --user setuptools virtualenv
+            source amazon/bin/activate
+            sudo pip3 install setuptools virtualenv
 #          sudo chown -R $USER /usr/local/bin/easy_install
       - run:
           command: |
