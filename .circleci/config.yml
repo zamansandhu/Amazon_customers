@@ -10,7 +10,7 @@ jobs:
           command:
             python3 -m venv env
             source ./amazon/bin/activate
-            pip install setuptools virtualenv --python=python3
+            pip3 install --user setuptools virtualenv
 #          sudo chown -R $USER /usr/local/bin/easy_install
       - run:
           command: |
