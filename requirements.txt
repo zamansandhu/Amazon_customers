@@ -1,4 +1,4 @@
-apturl==0.5.1ubuntu1
+apturl==0.5.2
 coverage==4.5.1
 Django==2.0.6
 djangorestframework==3.8.2
