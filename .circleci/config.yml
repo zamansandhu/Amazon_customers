@@ -7,11 +7,9 @@ jobs:
   build:
     working_directory: ~/Amazon_customers
     docker:
-      # specify the version you desire here
-      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
       - image: circleci/python:3.6.4
-      environment:
-        COVERAGE_PROCESS_START: "../.coveragerc"
+        environment:
+            COVERAGE_PROCESS_START: "../.coveragerc"
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
