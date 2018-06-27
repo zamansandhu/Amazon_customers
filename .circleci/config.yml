@@ -7,8 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
-          command: sudo chown -R $USER /usr/local/bin/easy_install
-                    pip install setuptools virtualenv
+          command:
+            python3 -m venv env
+            source ./amazon/bin/activate
+            pip install setuptools virtualenv
+#          sudo chown -R $USER /usr/local/bin/easy_install
       - run:
           command: |
              coverage run manage.py test
