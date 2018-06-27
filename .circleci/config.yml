@@ -44,7 +44,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            pipenv run "python manage.py test"
+            pipenv run "python3 manage.py test"
 #            pipenv run "coverage report -m"
 
 #      - store_artifacts:
