@@ -32,7 +32,6 @@ jobs:
           command: |
            pip install pipenv
            pipenv install
-#           pip install coveralls
 
 #      - save_cache:
 #          paths:
